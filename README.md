@@ -1,7 +1,8 @@
 # Bochi-the-Rock-Themed-Website
+It's my uni project on free to take theme website. 
 
-## It's my uni project on free to take theme. 
-I've chosen like a main theme anime "Bochi the Rock". So it's basically bochi the rock themed site about it(and kessouku band).
+I've chosen like a main theme anime "Bochi the Rock". 
+## So it's basically bochi the rock themed site about it(and kessouku band).
 There is no responsive design in it. In this project i combined html/css with a little bit of js.
 Also in the end of website there is implemitation of form backend api from Formspree.
 
