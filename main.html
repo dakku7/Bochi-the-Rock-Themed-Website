@@ -1,0 +1,217 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=1280">
+
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+        <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    </head>
+    <body>
+        <div class="first-page">
+            <header>
+                <fieldset class="headerfieldset">
+                    <a href="#members" class="header">members</a>
+                </fieldset>
+             
+                <fieldset class="headerfieldset">
+                    <a href="#music" class="header">music</a>
+                </fieldset>
+                <fieldset class="headerfieldset">
+                    <section class="header">
+                        <a href="#support" class="header">support</a>
+                    </section>  
+                </fieldset>
+            </header>
+            <div class="logo">
+                <div class="logoimg">
+                    <img src="images/Band.png" alt="logoimg1" class="logoimg1">
+                </div>
+                <div class="tire">
+                </div>
+                <div class="logo-text">
+                    MUSIC THAT CONNECTS HEARTS!
+                </div>
+            </div>
+
+            <div class="greetings-gallery-container">
+            <div class="greeting-text-block">
+                <div class="top-row">
+                <p class="gred">Greetings, wanderer!</p>
+                <img src="images/v1_88.png" alt="mini-goto" class="mini-goto">
+                </div>
+                <div class="greeting-description">
+                <h2 class="greeting-description-text">
+                    This fan-site is for those who feel music the same way we do – with soul, passion and total dedication!
+        </h2>
+        </div>
+    </div>
+
+    <div class="gallery-block">
+        <h1 class="gallery-title">our gallery</h1>
+        <div class="gallery-images">
+            <div class="gallery-images12">
+                <a href="images/gallery1.webp" data-lightbox="gallery" data-title="Описание 1">
+                    <img src="images/gallery1.webp" alt="Фото 1" />
+                </a>
+                <a href="images/gallery2.webp" data-lightbox="gallery" data-title="Описание 2">
+                    <img src="images/gallery2.webp" alt="Фото 2" />
+                </a>
+            </div>
+        
+            <div class="gallery-images34">
+                <a href="images/gallery3.webp" data-lightbox="gallery" data-title="Описание 3">
+        <img src="images/gallery3.webp" alt="Фото 3" />
+    </a>
+    <a href="images/gallery4.jpg" data-lightbox="gallery" data-title="Описание 4">
+        <img src="images/gallery4.jpg" alt="Фото 4" />
+    </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="separate"></div>
+        </div>
+        <div class="second-page">
+            <div class="about-section" id="members">
+            <div class="character-gallery">
+                <img src="images/kitaArtSize.png" alt="Kita" class="character-img" data-member="kita" id="kita">
+                <img src="images/ryoArtSize.png" alt="Ryo" class="character-img" data-member="ryo" id="ryo">
+                <img src="images/nijikaArtSize.png" alt="Nijika" class="character-img" data-member="nijika" id="nijika">
+                <img src="images/gotoArtSize.png" alt="Goto" class="character-img" data-member="goto" id="goto">
+            </div>
+            <div class="character-info" id="character-info">
+            </div>
+        </div>
+        <div class="separate1block"></div>
+          <div class="separate1"></div>
+<div class="album-thefull" id="music">
+    <h2 class="text3str">new releases</h2>
+    <div class="album-container">
+        
+    <div class="iconsAll">
+        <a href="https://open.spotify.com/album/0r5oazd96lslNQTYaBXd2g?si=DV8cP1b8RISk7rLfi_7Ajg" target="_blank">
+        <div class="spotify"><img src="images/Spotify.webp" alt="icon" class="icon"></div>  
+        </a>
+        <a href="https://music.apple.com/us/album/we-will-ep/1765078455" target="_blank">
+        <div class="applemusic"><img src="images/applepng.png" alt="icon" class="icon"></div>
+        </a>
+         <a href="https://soundcloud.com/kessokuband/milky-way" target="_blank">
+        <div class="soundcloud"><img src="images/soundcloud.png" alt="icon" class="icon"></div>   
+        </a>
+    </div>
+        <div class="albumImageContainer">
+            <img src="images/we_will.webp" alt="album" class="album">
+                <div class="volume-container">
+                    <label for="volume-slider"  style="color: white; margin-right: 15px;"> <img src="images/volume.png" width="30px 30px"> </label>
+                    <input type="range" class="volume-slider" id="volume-slider" min="0" max="1" step="0.01" value="1">
+                </div>
+        </div> 
+        <div class="track-section">
+            <div class="now-playing">
+                    <button id="pause-btn">
+                 <img id="pause-img" src="images/playbutton.png" width="50px" height="50px" alt="play/pause">
+                    </button>
+                <span id="current-song">milky way</span>
+            </div>
+            <ul class="track-list">
+                <li><button class="track-btn" data-src="music/milky way.mp3">▶ milky way</button></li>
+                <li><button class="track-btn" data-src="music/Planet.mp3">▶ Planet</button></li>
+                <li><button class="track-btn" data-src="music/Bundle.mp3">▶ Bundle up your dreams</button></li>
+                <li><button class="track-btn" data-src="music/UNITE.mp3">▶ UNITE</button></li>
+            </ul>
+        </div>
+        <audio id="audio-player" controls style="display: none;"></audio>
+    </div>
+</div>
+        <div class="support-section">
+            <div class="support-title-wrapper">
+                <h2 class="support-title" id="support">See us and support us at</h2>
+                <div class="venue-logo">
+                <img src="images/starry.png" class="venue" alt="Starry Venue Logo">
+                </div>
+            </div>
+            <div class="video-grid"> 
+                <video src="videos/【LIVE映像】「あのバンド」from『結束バンドLIVE-恒星-』｜TVアニメ「ぼっち.mp4" autoplay muted loop playsinline></video>
+                <video src="videos/【LIVE映像】「青春コンプレックス」⧸ ぼっち・ざ・ろっく！-SPECIAL STUDIO LIV.mp4" autoplay muted loop playsinline></video>
+                <video src="videos/【LIVE映像】結束バンド「あのバンド」LIVE at STARRY ⧸ 「ぼっち・ざ・ろっく.mp4" autoplay muted loop playsinline></video>
+                <video src="videos/【LIVE映像】結束バンド「星座になれたら」LIVE at 秀華祭⧸ 「ぼっち・ざ・ (1).mp4" autoplay muted loop playsinline></video>     
+            </div>
+            <div class="social-icons">
+  <a href="https://music.apple.com/us/album/we-will-ep/1765078455" target="_blank">
+    <img src="images/applepng.png" alt="Apple Music">
+  </a>
+  <a href="https://soundcloud.com/kessokuband/milky-way" target="_blank">
+    <img src="images/soundcloud.png" alt="SoundCloud">
+  </a>
+  <a href="https://music-tw.line.me/album/7527703" target="_blank">
+    <img src="images/LINEMUSIC.png" alt="LINE">
+  </a>
+  <a href="https://open.spotify.com/album/0r5oazd96lslNQTYaBXd2g?si=DV8cP1b8RISk7rLfi_7Ajg" target="_blank">
+    <img src="images/Spotify.webp" alt="Spotify">
+  </a>
+  <a href="https://music.youtube.com/playlist?list=OLAK5uy_kU6zgfIYAfldLfnpkRTaM_9tNVmJFDes0" target="_blank">
+    <img src="images/YouTubeMusic_Logo.png" alt="YouTube" class="youtubepng">
+  </a>
+</div>
+<section class="contact-section" id="contact">
+  <h2 class="contact-title">Get in Touch</h2>
+  <div class="contact-container">
+    <form class="contact-form" action="https://formspree.io/f/xdkzeove" method="POST" id="contact-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit" class="send-button">Send Message</button>
+      <p class="form-status" id="form-status"></p>
+    </form>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="images/Band.png" alt="Logo" />
+      <p class="footer-slogan">MUSIC THAT CONNECTS HEARTS!</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Contact</h3>
+      <ul>
+        <li>Email: <a href="mailto:contact@fanband.com">contact@fanband.com</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/btr_isosta/" target="_blank">@kessokuband</a></li>
+        <li>Official: <a href="https://bocchi.rocks/?fbclid=PAZXh0bgNhZW0CMTEAAacUzvRFvsn4AamjkR2LP5ongoN8d0cq1ZR9vy0S_jGN7MrIGdm8oXQhKbzWTg_aem_P4WgroTP8cLuc8LgDAJbAw" target="_blank">site</a></li>
+        <li>Location: Tokyo, Japan</li>
+      </ul>
+    </div>
+    <div class="footer-credits">
+      <h3>About</h3>
+      <p>This is a non-commercial fan website dedicated to the love of music and Kessoku Band. All rights to music, images, and videos belong to their respective owners.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Fan Site | Made by dakku</p>
+  </div>
+</footer>
+</div>
+
+<button id="scrollToTopBtn" title="Go to top">
+  <img src="images/arrow.png" width="50px" height="auto" alt="Scroll to top">
+</button>
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+    </body>
+    </html>
